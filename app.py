@@ -72,7 +72,7 @@ st.markdown("Upload the dataset or use a local file path. This demo shows EDA, t
 with st.sidebar:
     st.header("Data input")
     uploaded = st.file_uploader("Upload CSV (ds_salaries or similar)", type=['csv'])
-    local_path = st.text_input("Or enter local CSV path (ignored if upload used)", value="data_science_job_salaries.csv")
+    local_path = st.text_input("Or enter local CSV path (ignored if upload used)", value="Data Science Job Salaries.csv")
     st.write("---")
     st.header("Modeling options")
     model_choice = st.selectbox("Model", ["Linear Regression", "Random Forest"])
@@ -301,3 +301,4 @@ st.markdown("""
 - For better predictions, pick features that matter (experience_level, job_title, company_size, job_type).
 - Random Forest tends to give better R² at the cost of interpretability.
 """)
+
